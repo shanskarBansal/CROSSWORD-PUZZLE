@@ -1,0 +1,254 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    background-image: linear-gradient(#7B9F35, #226666);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .game {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: #AA3939;
+    border-radius: 5px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px;
+    border: 1px solid #550000;
+  }
+  
+  .grid button {
+    background-color: #cfcfcf;
+    color: #003333;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #550000;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  .game-container {
+    position: relative;
+    /* Your game container styles here */
+  }
+  
+  #hint-btn {
+    top: 30px;
+    right: 120px;
+    /* Your button styles here */
+  }
+
+  #hint-btn {
+    position: relative;
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #hint-btn:before {
+    content: "\1F4A1"; /* Unicode character for the light bulb icon */
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  #hint-btn:hover:before {
+    color: #FFD700; /* Change the color of the bulb icon on hover */
+  }
+  
+  #hint-btn:active:before {
+    transform: scale(0.8); /* Shrink the bulb icon when the button is clicked */
+  }
+  
+  #hint-btn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
+  #hint-btn:disabled:before {
+    color: #ccc; /* Change the color of the bulb icon when the button is disabled */
+  }
+  .footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer button {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    width: 80px;
+    background-color: #D4EE9F;
+    color: #003333;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .footer button:hover {
+    color: #D4EE9F;
+    background-color: #003333;
+  }
+  
+  .footer span {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    color: #D4EE9F;
+    font-weight: bold;
+    margin: auto 0;
+  }
+  
+  .message {
+    color:#AA3939;
+    height: 80px;
+  }
+
+  #cross{
+    text-align: center;
+    width:30px;
+    height:30px;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border: 1px solid white;
+    border-radius: 3px;
+  }
+  #buttons{
+    width:30%;
+    float: right;
+  }
+  tr{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+  }
+  td{
+    height: 30px;
+    width: 30px;
+  }
+  #leftBox{
+    float:left;
+  }
+  #rightBox{
+    float: right;
+    
+  }
+  .butt{
+    height:34px;
+    width: 80px;
+    border-radius: 9px;
+    
+  }
+  #puzzel{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    
+  }
+  .inputBox{
+      width: 40px;
+      height:40px;
+      border: 1px solid black;
+      text-align: center;
+  }
+  #hintsTable{
+    width: 480px;
+    float: left;
+  }
+
+  
+  .sliding-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    text-align: center;
+    background-image: url("./image2.jpg") ;
+    background-repeat: repeat;
+    animation: slide 60s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -2000px 0;
+    }
+  }
+
+h1{
+  position: absolute;
+  text-align: center;
+  transform: translate(50px, 100px);
+   background-color:dimgrey;
+
+  }
+
+.abc{
+  position: relative;
+  top: 80%;
+  left:50%;
+
+}
+
+.image-box {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+border-color: #550000;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+.image-box:hover{
+  background: url("./image3.jpg") no-repeat;
+
+}
+
+.css1{
+  position: absolute;
+  top: 2%;
+}
+ /* ending */
